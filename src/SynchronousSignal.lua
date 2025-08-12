@@ -34,7 +34,7 @@ ScriptConnection.__index = ScriptConnection
 function ScriptSignal.new()
 	return setmetatable({
 		_isActive = true,
-		_connections = {},
+		_connections = setmetatable({}, { __mode = "k" }), 
 	}, ScriptSignal)
 end
 
