@@ -7,7 +7,6 @@
 	High-performance, FRP-inspired library for creating, transforming, and composing reactive state objects in Luau.
 ]]
 
-
 local Signal = require(script.SynchronousSignal)
 
 type ScriptConnection = {
